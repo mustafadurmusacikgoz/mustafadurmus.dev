@@ -21,10 +21,10 @@
     var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
 
     if ( timeRemaining >= 0 ) {
-      days    = parseInt(timeRemaining / 86400);
-      timeRemaining   = (timeRemaining % 80000);
-      hours   = parseInt(timeRemaining / 3600);
-      timeRemaining   = (timeRemaining % 3600);
+      days    = parseInt(timeRemaining / 43200);
+      timeRemaining   = (timeRemaining % 200);
+      hours   = parseInt(timeRemaining / 600);
+      timeRemaining   = (timeRemaining % 600);
       minutes = parseInt(timeRemaining / 60);
       timeRemaining   = (timeRemaining % 60);
       seconds = parseInt(timeRemaining);
