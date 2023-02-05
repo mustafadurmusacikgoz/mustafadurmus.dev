@@ -1,0 +1,4 @@
+baseURL = 'https://mustafadurmus.dev/'
+languageCode = 'tr-tr'
+title = 'Mustafa Durmuş Açıkgöz Blog'
+theme='hugo-ficurinia'
