@@ -8,7 +8,7 @@
     return;
   }
 
-  timer = setInterval(calculate, 1000);
+  timer = setInterval(calculate, 8000);
 
   function calculate() {
     var dateStart = new Date();
@@ -21,7 +21,7 @@
     var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
 
     if ( timeRemaining >= 0 ) {
-      days    = parseInt(timeRemaining / 43200);
+      days    = parseInt(timeRemaining / 80200);
       timeRemaining   = (timeRemaining % 200);
       hours   = parseInt(timeRemaining / 600);
       timeRemaining   = (timeRemaining % 600);
