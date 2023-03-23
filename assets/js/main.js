@@ -8,7 +8,7 @@
     return;
   }
 
-  timer = setInterval(calculate, 8000);
+  timer = setInterval(calculate, 1000);
 
   function calculate() {
     var dateStart = new Date();
@@ -21,10 +21,10 @@
     var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
 
     if ( timeRemaining >= 0 ) {
-      days    = parseInt(timeRemaining / 80200);
-      timeRemaining   = (timeRemaining % 200);
-      hours   = parseInt(timeRemaining / 600);
-      timeRemaining   = (timeRemaining % 600);
+      days    = parseInt(timeRemaining / 86400);
+      timeRemaining   = (timeRemaining % 86400);
+      hours   = parseInt(timeRemaining / 3600);
+      timeRemaining   = (timeRemaining % 3600);
       minutes = parseInt(timeRemaining / 60);
       timeRemaining   = (timeRemaining % 60);
       seconds = parseInt(timeRemaining);
@@ -42,6 +42,7 @@
 }
 
 window.onload = function() {
+  
     var preloader = document.getElementsByClassName('preloader')[0];
     setTimeout(function(){
         preloader.style.display = 'none';
